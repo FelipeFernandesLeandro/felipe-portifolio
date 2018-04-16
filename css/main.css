@@ -1,0 +1,211 @@
+/**************************************************/
+html {
+  background-color: #16171e;
+  min-width: 320px; }
+
+body {
+  display: grid;
+  grid-template-rows: 73px 84vh auto 16vh; }
+
+.header {
+  display: grid;
+  background-color: #2b2d3c;
+  grid-template-rows: 5px auto; }
+  .header .row {
+    background-color: #7a7ea0; }
+  .header .cabecalho {
+    display: flex;
+    justify-content: space-between; }
+    .header .cabecalho .menu-hamburguer {
+      background: #16171e;
+      text-align: center;
+      font-size: 200%;
+      color: #7a7ea0;
+      display: flex;
+      flex-direction: column;
+      height: 73px;
+      width: 73px;
+      position: relative; }
+      .header .cabecalho .menu-hamburguer > * {
+        margin: auto; }
+
+.main {
+  background-color: darkblue; }
+
+.articles {
+  background-color: darkcyan; }
+
+.footer {
+  background-color: darkkhaki; }
+
+/**************************************************/
+/**************************************************/
+.hamburgler {
+  width: 54.75px;
+  height: 54.75px;
+  display: block;
+  transition: 0.3s ease all; }
+  .hamburgler.no-hamburgler {
+    transform: rotate(-45deg); }
+
+.bun,
+.meat {
+  display: block;
+  width: 100%;
+  background: #7a7ea0;
+  height: 20%;
+  transition: 0.3s ease all;
+  border-radius: 50px; }
+
+.no-hamburgler .top {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 50px 50px 0 0; }
+
+.no-hamburgler .bottom {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 0 0 50px 50px; }
+
+.meat {
+  margin: 20% 0; }
+  .no-hamburgler .meat {
+    margin: 2% 0; }
+
+/**************************************************/
+/**************************************************/
+@media screen and (min-width: 380px) {
+  body {
+    display: grid;
+    grid-template-rows: 128px 72vh auto 16vh; }
+
+  .img-container .logo {
+    display: none; }
+
+  .img-container::before {
+    content: url("../img/nome-destaque-250-125.jpg"); }
+
+  .hamburgler {
+    width: 96px;
+    height: 96px; }
+
+  .header .cabecalho .menu-hamburguer {
+    text-align: center;
+    font-size: 200%;
+    height: 128px !important;
+    width: 128px; } }
+@media screen and (min-width: 600px) {
+  .menu-hamburguer {
+    visibility: hidden; } }
+/**************************************************/
+/**************************************************/
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main .foto-rosto {
+    display: flex; }
+  .main .myFace:nth-child(-n + 2) {
+    margin-right: 1px; }
+  .main #foto1 {
+    order: 1;
+    height: 60vh;
+    border-bottom: black solid 5px;
+    border-top: black solid 5px;
+    border-left: black solid 5px; }
+  .main #foto2 {
+    order: 2;
+    height: 60vh;
+    border-bottom: black solid 5px;
+    border-top: black solid 5px; }
+  .main #foto3 {
+    order: 3;
+    height: 60vh;
+    border-bottom: black solid 5px;
+    border-top: black solid 5px;
+    border-right: black solid 5px; }
+
+/**************************************************/
+/**************************************************/
+#foto1 {
+  filter: grayscale(100%); }
+
+#foto1:hover {
+  transition: filter 0.5s ease-in-out;
+  filter: grayscale(0%); }
+
+#foto2 {
+  transition: filter 0.5s ease-in-out;
+  filter: grayscale(0%); }
+
+#foto2:hover {
+  filter: grayscale(100%); }
+
+#foto3 {
+  filter: grayscale(100%); }
+
+#foto3:hover {
+  transition: filter 0.5s ease-in-out;
+  filter: grayscale(0%); }
+
+/**************************************************/
+.articles {
+  text-align: center; }
+
+.articles .portifolio {
+  display: grid;
+  position: relative;
+  justify-content: center; }
+  .articles .portifolio ul {
+    margin: 100px 5vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    border-top: 1px solid #000;
+    max-width: 1092px; }
+    .articles .portifolio ul li {
+      border-radius: 2%;
+      border: 1px solid #000;
+      margin: 15px 10px;
+      background-color: white; }
+      .articles .portifolio ul li a {
+        text-decoration: none; }
+    .articles .portifolio ul span {
+      text-transform: uppercase; }
+    .articles .portifolio ul img {
+      width: 70vw;
+      max-width: 320px;
+      margin: 10px 10px;
+      border: 1px solid #000;
+      border-radius: 2%; }
+  .articles .portifolio .apresentacao {
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: 90px;
+    left: 50%;
+    padding: 0px;
+    background-color: white;
+    width: 300px;
+    display: block;
+    transform: translate(-50%); }
+
+.footer {
+  position: relative; }
+
+.footer div .icon-cheveron-up {
+  position: absolute;
+  font-size: 100px;
+  border: black solid 2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: -70px; }
+
+/*# sourceMappingURL=main.css.map */
