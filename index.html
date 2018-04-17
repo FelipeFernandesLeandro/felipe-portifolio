@@ -7,9 +7,12 @@
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/lib/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
 <body>
@@ -20,6 +23,50 @@
 			<div class="img-container">
 				<img src="img/logo-91-73.jpg" class="logo">
 			</div>
+			<nav>
+				<ul class="nav">
+					<li class="flex">
+						<a href="#" class="bttn" id="sobre">Sobre mim</a>
+					</li>
+					<li class="flex">
+						<a href="#" class="bttn" id="cv">Currículum</a>
+					</li>
+					<li>
+						<ul class="social-medias">
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-skype"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-whatsapp"></i>
+								</a>
+							</li>
+							<li>
+								<div class="toggle-body">
+									<a href="#0" class="toggle-btn" id="teste"></a>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 			<div class="menu-hamburguer">
 				<a href="#toggle" class="hamburgler">
 					<div class="bun top"></div>
@@ -30,18 +77,17 @@
 		</div>
 	</header>
 
-	<section class="main">
+	<section class="main background1">
 		<div class="foto-rosto">
-
 			<img src="img/foto-rosto-left-77.jpg" id="foto1" class="myFace" data-aos="fade-right">
 			<img src="img/foto-rosto-center-68.jpg" id="foto2" class="myFace" data-aos="zoom-in">
 			<img src="img/foto-rosto-right-114.jpg" id="foto3" class="myFace" data-aos="fade-left">
 		</div>
 	</section>
 
-	<section class="articles" id="articles">
+	<section class="articles background2" id="articles">
 		<div>
-			<div class="portifolio">
+			<div class="portifolio" data-aos="zoom-in">
 				<div></div>
 				<span class="apresentacao">Alguns dos meus trabalhos</span>
 				<ul>
@@ -50,7 +96,7 @@
 							<img src="img/portifolio-lu-print.png">
 							<div class="descricao">
 								<h4>Projeto de um portifólio pessoal</h4>
-								<p hidden>Website Design</p>
+								<p>Website Design</p>
 							</div>
 						</a>
 					</li>
@@ -77,19 +123,19 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+	<footer class="footer background3">
+		<a href="#" id="back-to-top">
+		</a>
 		<div>
-			<span class="icon-cheveron-up"/>
+			<span>&#169;
+				<span id="ano"></span> Felipe Fernandes</span>
 		</div>
-		<span>&#169;
-			<span id="ano"></span> Felipe Fernandes</span>
-		<nav></nav>
-		<span>(tooltip)</span>
+		<span class="tooltip">(tooltip)</span>
 	</footer>
 
 	<script src="js/lib/jquery-3.3.1.js"></script>
-	<script src="js/main.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<script src="js/main.js"></script>
 	<script>
 		AOS.init();
 	</script>
