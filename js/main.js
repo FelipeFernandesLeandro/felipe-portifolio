@@ -185,6 +185,7 @@ var messenger = new Messenger2($('#cv'));
 const background1 = document.querySelector('.background1');
 const background2 = document.querySelector('.background2');
 const background3 = document.querySelector('.background3');
+const background4 = document.querySelector('.background4');
 const toggleBody = document.querySelector('.toggle-body');
 const toggleBtn = document.querySelector('.toggle-btn');
 
@@ -206,6 +207,7 @@ $(document).ready(function () {
 		background1.classList.toggle('background--on1');
 		background2.classList.toggle('background--on2');
 		background3.classList.toggle('background--on3');
+		background4.classList.toggle('background--on4');
 		toggleBody.classList.toggle('toggle-body--on');
 		toggleBtn.classList.toggle('toggle-btn--on');
 		toggleBtn.classList.toggle('toggle-btn--scale');

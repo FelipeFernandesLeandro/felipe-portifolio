@@ -29,7 +29,9 @@ body {
 	display: grid;
 	background-color: $header-color;
 	grid-template-rows: $faixa-header-height auto;
-	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	z-index: 100;
+	border-bottom: 1px solid #191919;
 	.row {
 		background-color: $faixa-header-color;
 	}
@@ -379,7 +381,6 @@ a.bttn-dark {
 	justify-content: center;
 	align-items: center;
 	border-bottom: #dddddd solid 1px;
-	border-top: #fff solid 1px;
 	.foto-rosto {
 		display: flex;
 	}
@@ -507,7 +508,6 @@ a.bttn-dark {
 		margin-top: 90px;
 		left: 50%;
 		padding: 0px;
-		background-color: $articles-color;
 		width: 360px;
 		display: block;
 		transform: translate(-50%);
@@ -549,12 +549,9 @@ footer a:hover {
 
 /*************************************************************** TESTES *******************************************************/
 
-$color1: rgba($color: #353e7f,
-$alpha: 0.9);
-$color2: rgba($color: #353e7f,
-$alpha: 0.8);
-$color3: rgba($color: #353e7f,
-$alpha: 1);
+$color1: #2a2a2a;
+$color2: #757575;
+$color3: #1A181D;
 $color4: #fff;
 $color5: #fafafa;
 $color6: #f5f5f5;
@@ -579,6 +576,11 @@ $iteration: 1;
 	transition: 1.5s $easing;
 }
 
+.background4 {
+	background-color: $color5 !important;
+	transition: 1.5s $easing;
+}
+
 .background--on1 {
 	background: $color1 !important;
 	transition: 1.5s $easing;
@@ -591,6 +593,11 @@ $iteration: 1;
 
 .background--on3 {
 	background: $color3 !important;
+	transition: 1.5s $easing;
+}
+
+.background--on4 {
+	background-color: $color2 !important;
 	transition: 1.5s $easing;
 }
 
@@ -620,7 +627,7 @@ $iteration: 1;
 	cursor: pointer;
 	transform: translateX(0);
 	transition: $animtime $easing;
-	border: solid $color1 1px;
+	border: solid $color4 2px;
 }
 
 .toggle-btn--on {
