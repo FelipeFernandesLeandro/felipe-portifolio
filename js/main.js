@@ -198,11 +198,6 @@ $(document).ready(function () {
 	});
 	$('#ano').text(new Date().getFullYear());
 
-	/* event listener de bounce */
-	// document.querySelector('.fa-facebook-f').addEventListener('mouseenter', () => {
-	//  	$(".fa-facebook-f").addClass("animated bounce");
-	//  });
-
 	/* Botão toggle background */
 	toggleBtn.addEventListener('click', () => {
 		background1.classList.toggle('background--on1');
