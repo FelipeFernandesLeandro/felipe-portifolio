@@ -186,6 +186,7 @@ const background1 = document.querySelector('.background1');
 const background2 = document.querySelector('.background2');
 const background3 = document.querySelector('.background3');
 const background4 = document.querySelector('.background4');
+const background5 = document.querySelector('.background5');
 const toggleBody = document.querySelector('.toggle-body');
 const toggleBtn = document.querySelector('.toggle-btn');
 
@@ -198,9 +199,9 @@ $(document).ready(function () {
 	$('#ano').text(new Date().getFullYear());
 
 	/* event listener de bounce */
-	// toggleBtn.addEventListener('mouseenter', () => {
-	// 	$("#teste").addClass("animated bounce");
-	// });
+	// document.querySelector('.fa-facebook-f').addEventListener('mouseenter', () => {
+	//  	$(".fa-facebook-f").addClass("animated bounce");
+	//  });
 
 	/* Botão toggle background */
 	toggleBtn.addEventListener('click', () => {
@@ -208,8 +209,14 @@ $(document).ready(function () {
 		background2.classList.toggle('background--on2');
 		background3.classList.toggle('background--on3');
 		background4.classList.toggle('background--on4');
+		background5.classList.toggle('background--on5');
 		toggleBody.classList.toggle('toggle-body--on');
 		toggleBtn.classList.toggle('toggle-btn--on');
 		toggleBtn.classList.toggle('toggle-btn--scale');
 	});
+
+	$('#back-to-top').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop:0}, 1200);
+    });
 });
