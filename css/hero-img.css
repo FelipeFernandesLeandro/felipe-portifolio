@@ -1,0 +1,52 @@
+#keyboard {
+  left: -6%;
+  top: 8%;
+  transform: rotate(-45deg); }
+
+.pen {
+  transform: rotate(-70deg);
+  left: 73%;
+  z-index: 80;
+  top: 45%; }
+
+#mouse {
+  left: 25%;
+  top: 2%;
+  transform: rotate(18deg); }
+
+#iphone {
+  left: 50%;
+  top: -2%;
+  transform: translate(-87%); }
+
+#coffee {
+  left: 63%;
+  top: 2%;
+  transform: rotate(30deg); }
+
+#eraser {
+  left: 70%;
+  top: 78%;
+  transform: rotate(-45deg); }
+
+#grafite-cont {
+  left: 5%;
+  top: 75%;
+  transform: rotate(-25deg); }
+
+.notepad {
+  left: 75%;
+  top: 15%;
+  transform: rotate(-45deg) scale(0.9); }
+
+.wrap {
+  position: absolute;
+  top: 15%;
+  transform: scale(1); }
+
+#headset {
+  transform: rotate(-15deg);
+  left: 13%;
+  top: 45%; }
+
+/*# sourceMappingURL=hero-img.css.map */

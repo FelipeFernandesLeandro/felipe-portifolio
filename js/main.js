@@ -213,5 +213,18 @@ $(document).ready(function () {
 	$('#back-to-top').on('click', function(event) {
         event.preventDefault();
         $('html, body').animate({scrollTop:0}, 1200);
-    });
+	});
+	
+	function makeRing(num, top) {
+		if (num > 0) {
+		  top += 20;
+		  var ring = '<div class="ring" id="ring' + num + '"> </div>'
+		  $(".notepad").append(ring);
+		  $("#ring" + num).css("top", top);
+		  num--;
+		  makeRing(num, top);
+		}
+	  }
+	  
+	  makeRing(18, 15);
 });
