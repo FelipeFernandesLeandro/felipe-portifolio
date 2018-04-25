@@ -35,9 +35,9 @@
   transform: rotate(-25deg) scale(1.3); }
 
 .notepad {
-  left: 75%;
-  top: 15%;
-  transform: rotate(-45deg) scale(1.2); }
+  left: 85%;
+  top: -10%;
+  transform: rotate(25deg) scale(1.2); }
 
 .wrap {
   position: absolute;
