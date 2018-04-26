@@ -65,7 +65,7 @@
   left: 96%;
   top: -10%;
   transform: rotate(25deg) scale(1);
-  clear: both; }
+  float: none; }
 
 .wrap {
   position: absolute;
