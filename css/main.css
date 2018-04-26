@@ -226,6 +226,9 @@ a.bttn {
 .main {
   position: relative; }
 
+.background6 {
+  overflow: hidden; }
+
 .wrap {
   width: 100%;
   height: 100%;
@@ -407,8 +410,7 @@ a.bttn {
 #keyboard {
   left: -28%;
   top: 18%;
-  transform: rotate(-45deg) scale(1);
-  float: none; }
+  transform: rotate(-45deg) scale(1); }
 
 #keyboard::after {
   content: "\A#keyboard { \A position: absolute;}";
@@ -418,14 +420,12 @@ a.bttn {
   transform: rotate(-70deg) scale(1);
   left: 75%;
   z-index: 80;
-  top: 65%;
-  float: none; }
+  top: 65%; }
 
 #mouse {
   left: 12%;
   top: 18%;
-  transform: rotate(18deg) scale(1.1);
-  float: none; }
+  transform: rotate(18deg) scale(1.1); }
 
 #mouse::after {
   content: ".mouse{ \A 	border-radius: 10rem;}";
@@ -434,14 +434,12 @@ a.bttn {
 #iphone {
   left: 50%;
   top: 15%;
-  transform: translate(-50%) scale(1.3);
-  float: none; }
+  transform: translate(-50%) scale(1.3); }
 
 #coffee {
   left: 66%;
   top: 15%;
-  transform: rotate(30deg) scale(1.2);
-  float: none; }
+  transform: rotate(30deg) scale(1.2); }
 
 #alca::after {
   content: "\A \A \A.coffee{ \Atemperature: hot}";
@@ -450,8 +448,7 @@ a.bttn {
 #eraser {
   left: 89%;
   top: 125%;
-  transform: rotate(-45deg) scale(1.3);
-  float: none; }
+  transform: rotate(-45deg) scale(1.3); }
 
 #eraser::after {
   content: "#eraser{ \A   	background-color: #07bdff;}";
@@ -460,8 +457,7 @@ a.bttn {
 #grafite-cont {
   left: -8%;
   top: 125%;
-  transform: rotate(-25deg) scale(1.2);
-  float: none; }
+  transform: rotate(-25deg) scale(1.2); }
 
 #grafite-cont::after {
   content: "#graphite{ \A		width: 7rem;}";
@@ -470,8 +466,7 @@ a.bttn {
 .notepad {
   left: 96%;
   top: -10%;
-  transform: rotate(25deg) scale(1);
-  float: none; }
+  transform: rotate(25deg) scale(1); }
 
 .wrap {
   position: absolute;
@@ -481,8 +476,7 @@ a.bttn {
 #headset {
   transform: rotate(-30deg) scale(1.2);
   left: 0%;
-  top: 60%;
-  float: none; }
+  top: 60%; }
 
 .title {
   font-size: 2.5rem !important;
