@@ -1,12 +1,12 @@
 html {
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 body {
   display: grid;
   grid-template-rows: 73px 100vh auto 115px;
   font-family: "Proxima Nova", Georgia, sans-serif;
-  font-size: 14px;
-  overflow-x: hidden; }
+  font-size: 14px; }
 
 nav {
   align-self: center;
