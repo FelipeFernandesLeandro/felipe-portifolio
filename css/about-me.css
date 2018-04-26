@@ -160,7 +160,7 @@ a.bttn {
 @media screen and (min-width: 380px) {
   body {
     display: grid;
-    grid-template-rows: 135px 100vh auto 115px; }
+    grid-template-rows: 135px 120vh auto 115px; }
 
   .img-container .logo {
     display: none; }
