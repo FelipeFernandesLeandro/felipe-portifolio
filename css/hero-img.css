@@ -2,7 +2,7 @@
   left: -28%;
   top: 18%;
   transform: rotate(-45deg) scale(1);
-  clear: both; }
+  float: none; }
 
 #keyboard::after {
   content: "\A#keyboard { \A position: absolute;}";
@@ -13,13 +13,13 @@
   left: 75%;
   z-index: 80;
   top: 65%;
-  clear: both; }
+  float: none; }
 
 #mouse {
   left: 12%;
   top: 18%;
   transform: rotate(18deg) scale(1.1);
-  clear: both; }
+  float: none; }
 
 #mouse::after {
   content: ".mouse{ \A 	border-radius: 10rem;}";
@@ -29,13 +29,13 @@
   left: 50%;
   top: 15%;
   transform: translate(-50%) scale(1.3);
-  clear: both; }
+  float: none; }
 
 #coffee {
   left: 66%;
   top: 15%;
   transform: rotate(30deg) scale(1.2);
-  clear: both; }
+  float: none; }
 
 #alca::after {
   content: "\A \A \A.coffee{ \Atemperature: hot}";
@@ -45,7 +45,7 @@
   left: 89%;
   top: 125%;
   transform: rotate(-45deg) scale(1.3);
-  clear: both; }
+  float: none; }
 
 #eraser::after {
   content: "#eraser{ \A   	background-color: #07bdff;}";
@@ -55,7 +55,7 @@
   left: -8%;
   top: 125%;
   transform: rotate(-25deg) scale(1.2);
-  clear: both; }
+  float: none; }
 
 #grafite-cont::after {
   content: "#graphite{ \A		width: 7rem;}";
@@ -76,7 +76,7 @@
   transform: rotate(-30deg) scale(1.2);
   left: 0%;
   top: 60%;
-  clear: both; }
+  float: none; }
 
 .title {
   font-size: 2.5rem !important;
