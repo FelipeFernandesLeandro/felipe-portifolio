@@ -187,6 +187,7 @@ const background2 = document.querySelector('.background2');
 const background3 = document.querySelector('.background3');
 const background4 = document.querySelector('.background4');
 const background5 = document.querySelector('.background5');
+const background6 = document.querySelector('.background6');
 const toggleBody = document.querySelector('.toggle-body');
 const toggleBtn = document.querySelector('.toggle-btn');
 
@@ -205,6 +206,7 @@ $(document).ready(function () {
 		background3.classList.toggle('background--on3');
 		background4.classList.toggle('background--on4');
 		background5.classList.toggle('background--on5');
+		background6.classList.toggle('background--on6');
 		toggleBody.classList.toggle('toggle-body--on');
 		toggleBtn.classList.toggle('toggle-btn--on');
 		toggleBtn.classList.toggle('toggle-btn--scale');
@@ -214,7 +216,7 @@ $(document).ready(function () {
         event.preventDefault();
         $('html, body').animate({scrollTop:0}, 1200);
 	});
-	
+
 	function makeRing(num, top) {
 		if (num > 0) {
 		  top += 20;
@@ -225,6 +227,6 @@ $(document).ready(function () {
 		  makeRing(num, top);
 		}
 	  }
-	  
+
 	  makeRing(18, 15);
 });

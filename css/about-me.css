@@ -76,7 +76,10 @@ a {
 a.bttn {
   color: #6a7cff;
   text-decoration: none;
-  transition: 0.3s ease all; }
+  transition: 0.3s ease all;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   a.bttn:hover {
     color: #2b2d3c; }
   a.bttn:focus {
@@ -270,7 +273,7 @@ footer #back-to-top:active {
 .background1 {
   background: #fff !important;
   transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
-  color: #666666 !important; }
+  color: #2e2e2e !important; }
 
 .background2 {
   background: #fafafa !important;
@@ -318,6 +321,16 @@ footer #back-to-top:active {
   height: 55px;
   transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35); }
 
+.background6 {
+  background-color: #fff !important;
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+  color: #666666 !important; }
+
+.background--on6 {
+  background-color: #2a2a2a !important;
+  transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+  color: #ddd !important; }
+
 .toggle-body {
   width: 3.5rem;
   height: 1rem;
@@ -335,7 +348,7 @@ footer #back-to-top:active {
   width: 0.9rem;
   height: 0.9rem;
   position: absolute;
-  top: calc(50% - 1.9rem / 2);
+  top: calc(50% - 1.15rem / 2);
   left: calc(27% - 1.7rem / 2);
   background: white;
   border-radius: 2rem;
@@ -347,7 +360,7 @@ footer #back-to-top:active {
 
 .toggle-btn--on {
   transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
-  transform: translateX(60%);
+  transform: translateX(200%);
   background: #fff; }
 
 @keyframes angle {
