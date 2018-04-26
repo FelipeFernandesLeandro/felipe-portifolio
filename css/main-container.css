@@ -1,31 +1,23 @@
 /*
 Error: Undefined variable: "$main-color".
-        on line 2 of scss/main-container.scss
+        on line 5 of scss/main-container.scss
 
 1: .main {
-2:   background-color: $main-color;
-3:   position: relative;
-4: }
-5: // VARIABLES
-6: $mainblack: $main-color;
-7: $black: #22262b;
+2:   position: relative;
+3: }
+4: // VARIABLES
+5: $mainblack: $main-color;
+6: $black: #22262b;
+7: $amain: #fbb053;
+8: $grisclaro: #e0e2e2;
+9: $display: #abadc6;
+10: $item: #d1c9bf;
 
 Backtrace:
-scss/main-container.scss:2
+scss/main-container.scss:5
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:482:in `visit_variable'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +57,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$main-color\".\A         on line 2 of scss/main-container.scss\A \A 1: .main {\A 2:   background-color: $main-color;\A 3:   position: relative;\A 4: }\A 5: // VARIABLES\A 6: $mainblack: $main-color;\A 7: $black: #22262b;"; }
+  content: "Error: Undefined variable: \"$main-color\".\A         on line 5 of scss/main-container.scss\A \A 1: .main {\A 2:   position: relative;\A 3: }\A 4: // VARIABLES\A 5: $mainblack: $main-color;\A 6: $black: #22262b;\A 7: $amain: #fbb053;\A 8: $grisclaro: #e0e2e2;\A 9: $display: #abadc6;\A 10: $item: #d1c9bf;"; }
