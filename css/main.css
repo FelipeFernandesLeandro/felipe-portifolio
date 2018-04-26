@@ -226,6 +226,9 @@ a.bttn {
 .main {
   position: relative; }
 
+.background6 {
+  overflow: hidden; }
+
 .wrap {
   width: 100%;
   height: 100%;
