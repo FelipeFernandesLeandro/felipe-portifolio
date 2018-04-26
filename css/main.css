@@ -466,7 +466,8 @@ a.bttn {
 .notepad {
   left: 96%;
   top: -10%;
-  transform: rotate(25deg) scale(1); }
+  transform: rotate(25deg) scale(1);
+  overflow: hidden; }
 
 .wrap {
   position: absolute;
