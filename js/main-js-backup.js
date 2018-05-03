@@ -1,7 +1,7 @@
 /* Efeito hacker text */
-let Messenger = function(el) {
+var Messenger = function(el) {
   "use strict";
-  let m = this;
+  var m = this;
 
   m.init = function() {
     m.codeletters = "&#*+%?£@§$";
@@ -14,7 +14,7 @@ let Messenger = function(el) {
   };
 
   m.generateRandomString = function(length) {
-    let random_text = "";
+    var random_text = "";
     while (random_text.length < length) {
       random_text += m.codeletters.charAt(
         Math.floor(Math.random() * m.codeletters.length)
@@ -31,7 +31,7 @@ let Messenger = function(el) {
         m.current_length = m.messages[m.message].length;
       }
 
-      let message = m.generateRandomString(m.current_length);
+      var message = m.generateRandomString(m.current_length);
       $(el).html(message);
 
       setTimeout(m.animateIn, 20);
@@ -43,7 +43,7 @@ let Messenger = function(el) {
   m.animateFadeBuffer = function() {
     if (m.fadeBuffer === false) {
       m.fadeBuffer = [];
-      for (let i = 0; i < m.messages[m.message].length; i++) {
+      for (var i = 0; i < m.messages[m.message].length; i++) {
         m.fadeBuffer.push({
           c: Math.floor(Math.random() * 12) + 1,
           l: m.messages[m.message].charAt(i)
@@ -51,11 +51,11 @@ let Messenger = function(el) {
       }
     }
 
-    let do_cycles = false;
-    let message = "";
+    var do_cycles = false;
+    var message = "";
 
-    for (let i = 0; i < m.fadeBuffer.length; i++) {
-      let fader = m.fadeBuffer[i];
+    for (var i = 0; i < m.fadeBuffer.length; i++) {
+      var fader = m.fadeBuffer[i];
       if (fader.c > 0) {
         do_cycles = true;
         fader.c--;
@@ -95,9 +95,9 @@ let Messenger = function(el) {
 console.clear();
 var messenger = new Messenger($("#sobre"));
 
-let Messenger2 = function(el) {
+var Messenger2 = function(el) {
   "use strict";
-  let m = this;
+  var m = this;
 
   m.init = function() {
     m.codeletters = "&#*+%?£@§$";
@@ -110,7 +110,7 @@ let Messenger2 = function(el) {
   };
 
   m.generateRandomString = function(length) {
-    let random_text = "";
+    var random_text = "";
     while (random_text.length < length) {
       random_text += m.codeletters.charAt(
         Math.floor(Math.random() * m.codeletters.length)
@@ -127,7 +127,7 @@ let Messenger2 = function(el) {
         m.current_length = m.messages[m.message].length;
       }
 
-      let message = m.generateRandomString(m.current_length);
+      var message = m.generateRandomString(m.current_length);
       $(el).html(message);
 
       setTimeout(m.animateIn, 20);
@@ -139,7 +139,7 @@ let Messenger2 = function(el) {
   m.animateFadeBuffer = function() {
     if (m.fadeBuffer === false) {
       m.fadeBuffer = [];
-      for (let i = 0; i < m.messages[m.message].length; i++) {
+      for (var i = 0; i < m.messages[m.message].length; i++) {
         m.fadeBuffer.push({
           c: Math.floor(Math.random() * 12) + 1,
           l: m.messages[m.message].charAt(i)
@@ -147,11 +147,11 @@ let Messenger2 = function(el) {
       }
     }
 
-    let do_cycles = false;
-    let message = "";
+    var do_cycles = false;
+    var message = "";
 
-    for (let i = 0; i < m.fadeBuffer.length; i++) {
-      let fader = m.fadeBuffer[i];
+    for (var i = 0; i < m.fadeBuffer.length; i++) {
+      var fader = m.fadeBuffer[i];
       if (fader.c > 0) {
         do_cycles = true;
         fader.c--;
@@ -255,7 +255,7 @@ $(document).ready(function() {
   function makeRing(num, top) {
     if (num > 0) {
       top += 20;
-      let ring = '<div class="ring" id="ring' + num + '"> </div>';
+      var ring = '<div class="ring" id="ring' + num + '"> </div>';
       $(".notepad").append(ring);
       $("#ring" + num).css("top", top);
       num--;

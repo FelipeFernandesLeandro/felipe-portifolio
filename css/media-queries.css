@@ -3,14 +3,14 @@ Error: Undefined variable: "$header-height".
         on line 4 of scss/media-queries.scss
 
 1: @media screen and (min-width: 380px) {
-2: 	body {
-3: 	  display: grid;
-4: 	  grid-template-rows: $header-height 120vh auto 115px;
-5: 	}
-6: 	.img-container .logo {
-7: 	  display: none;
-8: 	}
-9: 	.img-container::before {
+2:   body {
+3:     display: grid;
+4:     grid-template-rows: $header-height 120vh auto 115px;
+5:   }
+6:   .img-container .logo {
+7:     display: none;
+8:   }
+9:   .img-container::before {
 
 Backtrace:
 scss/media-queries.scss:4
@@ -85,4 +85,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-height\".\A         on line 4 of scss/media-queries.scss\A \A 1: @media screen and (min-width: 380px) {\A 2: 	body {\A 3: 	  display: grid;\A 4: 	  grid-template-rows: $header-height 120vh auto 115px;\A 5: 	}\A 6: 	.img-container .logo {\A 7: 	  display: none;\A 8: 	}\A 9: 	.img-container::before {"; }
+  content: "Error: Undefined variable: \"$header-height\".\A         on line 4 of scss/media-queries.scss\A \A 1: @media screen and (min-width: 380px) {\A 2:   body {\A 3:     display: grid;\A 4:     grid-template-rows: $header-height 120vh auto 115px;\A 5:   }\A 6:   .img-container .logo {\A 7:     display: none;\A 8:   }\A 9:   .img-container::before {"; }

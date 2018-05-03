@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
 	<header class="header" data-aos="fade-down" data-aos-duration="2000">
 		<div class="row-top"></div>
 		<div class="cabecalho">
@@ -29,7 +28,7 @@
 			<nav>
 				<ul class="nav">
 					<li class="flex">
-						<a href="about-me.html" class="bttn" id="sobre">Sobre mim</a>
+						<a href="#" class="bttn" id="sobre">Sobre mim</a>
 					</li>
 					<li class="flex">
 						<a href="#" class="bttn" id="cv">Currículum</a>
@@ -70,18 +69,74 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="menu-hamburguer">
-				<a href="#toggle" class="hamburgler">
-					<div class="bun top"></div>
-					<div class="meat"></div>
-					<div class="bun bottom"></div>
-				</a>
-			</div>
+			<label>
+				<input type="checkbox" />
+				<span class="side-menu">
+					<span class="hamburger"></span>
+				</span>
+				<ul>
+					<li>
+						<a href="#">Sobre mim</a>
+					</li>
+					<li>
+						<a href="#">Currículum</a>
+					</li>
+					<li>
+						<a href="#" class="hvr-push">
+							<i class="fa fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="hvr-push">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="hvr-push">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="hvr-push">
+							<i class="fa fa-skype"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="hvr-push">
+							<i class="fa fa-whatsapp"></i>
+						</a>
+					</li>
+					<li>
+						<div class="toggle-body2 hvr-forward">
+							<a href="#0" class="toggle-btn2" id="teste"></a>
+						</div>
+					</li>
+				</ul>
+				<!-- <ul>
+					<li>
+						<a href="#Home">Home</a>
+					</li>
+					<li>
+						<a href="#About">About</a>
+					</li>
+					<li>
+						<a href="#Work">Work</a>
+					</li>
+				</ul> -->
+			</label>
 		</div>
 	</header>
+
 	<div class="background6">
 		<div class="main container">
 			<div class="row background1">
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+				</div>
 				<div id="keyboard">
 					<div id="ext">
 						<div class="fx1"></div>
@@ -418,7 +473,7 @@
 					</div>
 				</div>
 				<!---->
-				<div class="title text-center">
+				<div class="title text-center background7">
 					<h1 class="">Desenvolvedor WEB</h1>
 					<h3 class="">Front-end
 						<span>&#xb7</span> Back-end</h3>
@@ -480,7 +535,6 @@
 		</div>
 		<span class="tooltip hvr-float">(tooltip)</span>
 	</footer>
-
 	<script src="js/lib/jquery-3.3.1.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<script src="js/main.js"></script>

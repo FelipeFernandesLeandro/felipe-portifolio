@@ -71,7 +71,12 @@
   text-shadow: 2px 2px 4px #969696;
   float: none;
   margin: 40vh auto 0 auto;
-  z-index: 1000; }
+  z-index: 98;
+  background-color: #fafafa;
+  padding: 1vh 1vw;
+  border: #2B2D3C solid 2px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #969696; }
   .title h1 {
     font-size: 3.8rem; }
   .title h3 {

@@ -162,7 +162,7 @@
   display: flex;
   position: absolute;
   justify-content: center;
-  z-index: 200;
+  z-index: 96;
   box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.35); }
   #coffee #alca {
     width: 2.5rem;
@@ -320,7 +320,7 @@
   position: absolute;
   width: 18.75rem;
   height: 25rem;
-  background: #84c856;
+  background: #abadc6;
   border-radius: 0.3125rem 0.3125rem 0.3125rem 0.9375rem; }
 
 .teste-a {
