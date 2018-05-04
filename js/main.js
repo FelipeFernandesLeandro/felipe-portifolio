@@ -205,13 +205,13 @@ const toggleBody2 = document.querySelector(".toggle-body2");
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggleBtn2 = document.querySelector(".toggle-btn2");
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "250px";
+// }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "0";
+// }
 
 $(document).ready(function() {
   /* Atualiza ano no footer */
