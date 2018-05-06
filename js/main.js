@@ -1,6 +1,5 @@
 /* Efeito hacker text */
 let Messenger = function(el) {
-  "use strict";
   let m = this;
 
   m.init = function() {
@@ -205,15 +204,9 @@ const toggleBody2 = document.querySelector(".toggle-body2");
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggleBtn2 = document.querySelector(".toggle-btn2");
 
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "250px";
-// }
-
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-// }
-
 $(document).ready(function() {
+  renderizarGithubRepo();
+
   /* Atualiza ano no footer */
   $("#ano").text(new Date().getFullYear());
 
@@ -265,3 +258,59 @@ $(document).ready(function() {
 
   makeRing(18, 15);
 });
+
+function renderizarGithubRepo() {
+  var repositorios = document.querySelector("body .articles .portifolio");
+
+  let url =
+    "https://api.github.com/users/FelipeFernandesLeandro/repos?sort=updated&affiliation=owner";
+  let urltest =
+    "`https://github.com/${obj[0].owner.login}/${obj[0].name}/blob/master/poster.jpg`";
+
+  let req = new XMLHttpRequest();
+  req.responseType = JSON;
+  req.open("GET", url, true);
+
+  req.onload = function() {
+    let ul = document.createElement("ul");
+    let jsonResponse = req.response;
+    let obj = JSON.parse(jsonResponse);
+
+    for (let index = 0; index <= 2; index++) {
+      const element = obj[index];
+
+      let li = document.createElement("li");
+      li.className = "hvr-grow";
+
+      let anchor = document.createElement("a");
+      let ancora = `https://${obj[index].owner.login}.github.io/${
+        obj[index].name
+      }`;
+      $(anchor).attr("href", ancora);
+
+      let img = document.createElement("img");
+
+      let div = document.createElement("div");
+      div.className = "descricao";
+
+      let h4 = document.createElement("h4");
+      h4.className = "fonte1";
+      h4.textContent = element.name;
+
+      let p = document.createElement("p");
+      p.className = "fonte1";
+
+      img.src = `https://raw.githubusercontent.com/${obj[index].owner.login}/${
+        obj[index].name
+      }/master/poster.jpg`;
+      div.appendChild(h4);
+      div.appendChild(p);
+      anchor.appendChild(img);
+      anchor.appendChild(div);
+      li.appendChild(anchor);
+      ul.appendChild(li);
+    }
+    repositorios.appendChild(ul);
+  };
+  req.send(null);
+}

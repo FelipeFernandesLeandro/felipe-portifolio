@@ -1133,7 +1133,8 @@ a.bttn {
 
 .descricao h4 {
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .footer {
   background-color: #f5f5f5;
