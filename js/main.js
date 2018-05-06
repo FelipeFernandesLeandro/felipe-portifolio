@@ -276,39 +276,40 @@ function renderizarGithubRepo() {
     let jsonResponse = req.response;
     let obj = JSON.parse(jsonResponse);
 
-    for (let index = 0; index <= 2; index++) {
+    for (let index = 0; index <= 3; index++) {
       const element = obj[index];
+      if (element.name != "felipe-portifolio") {
+        let li = document.createElement("li");
+        li.className = "hvr-grow";
 
-      let li = document.createElement("li");
-      li.className = "hvr-grow";
+        let anchor = document.createElement("a");
+        let ancora = `https://${obj[index].owner.login}.github.io/${
+          obj[index].name
+        }`;
+        $(anchor).attr("href", ancora);
 
-      let anchor = document.createElement("a");
-      let ancora = `https://${obj[index].owner.login}.github.io/${
-        obj[index].name
-      }`;
-      $(anchor).attr("href", ancora);
+        let img = document.createElement("img");
 
-      let img = document.createElement("img");
+        let div = document.createElement("div");
+        div.className = "descricao";
 
-      let div = document.createElement("div");
-      div.className = "descricao";
+        let h4 = document.createElement("h4");
+        h4.className = "fonte1";
+        h4.textContent = element.name;
 
-      let h4 = document.createElement("h4");
-      h4.className = "fonte1";
-      h4.textContent = element.name;
+        let p = document.createElement("p");
+        p.className = "fonte1";
 
-      let p = document.createElement("p");
-      p.className = "fonte1";
-
-      img.src = `https://raw.githubusercontent.com/${obj[index].owner.login}/${
-        obj[index].name
-      }/master/poster.jpg`;
-      div.appendChild(h4);
-      div.appendChild(p);
-      anchor.appendChild(img);
-      anchor.appendChild(div);
-      li.appendChild(anchor);
-      ul.appendChild(li);
+        img.src = `https://raw.githubusercontent.com/${
+          obj[index].owner.login
+        }/${obj[index].name}/master/poster.jpg`;
+        div.appendChild(h4);
+        div.appendChild(p);
+        anchor.appendChild(img);
+        anchor.appendChild(div);
+        li.appendChild(anchor);
+        ul.appendChild(li);
+      }
     }
     repositorios.appendChild(ul);
   };
