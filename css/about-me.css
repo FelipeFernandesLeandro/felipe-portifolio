@@ -6,7 +6,8 @@ body {
   display: grid;
   grid-template-rows: 73px 100vh auto 115px;
   font-family: "Proxima Nova", Georgia, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-x: hidden; }
 
 nav {
   align-self: center;

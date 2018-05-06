@@ -6,7 +6,8 @@ body {
   display: grid;
   grid-template-rows: 73px 100vh auto 115px;
   font-family: "Proxima Nova", Georgia, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-x: hidden; }
 
 nav {
   align-self: center;
@@ -539,6 +540,9 @@ a.bttn {
 
   .sidenav a {
     font-size: 18px; } }
+.main .row {
+  transform-style: preserve-3d; }
+
 #keyboard {
   left: -28%;
   top: 18%;

@@ -205,6 +205,17 @@ const toggleBtn = document.querySelector(".toggle-btn");
 const toggleBtn2 = document.querySelector(".toggle-btn2");
 
 $(document).ready(function() {
+	$(window).scroll(function() {
+		$('.item').each(function() {
+		  var imagePos = $(this).offset().top;
+
+		  var topOfWindow = $(window).scrollTop();
+		  if (imagePos < topOfWindow + 400) {
+			$(this).addClass('slideUp');
+		  }
+		});
+	  });
+
   renderizarGithubRepo();
 
   /* Atualiza ano no footer */
@@ -295,7 +306,7 @@ function renderizarGithubRepo() {
 
         let h4 = document.createElement("h4");
         h4.className = "fonte1";
-        h4.textContent = element.name;
+        h4.textContent = element.name.replace('-',' ');
 
         let p = document.createElement("p");
         p.className = "fonte1";

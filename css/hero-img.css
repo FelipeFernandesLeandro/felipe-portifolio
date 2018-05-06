@@ -1,3 +1,6 @@
+.main .row {
+  transform-style: preserve-3d; }
+
 #keyboard {
   left: -28%;
   top: 18%;
