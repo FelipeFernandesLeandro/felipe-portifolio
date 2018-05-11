@@ -293,10 +293,14 @@ function renderizarGithubRepo() {
         let li = document.createElement("li");
         li.className = "hvr-grow";
 
-        let anchor = document.createElement("a");
-        let ancora = `https://${obj[index].owner.login}.github.io/${
+		var anchor = document.createElement("a");
+		if (element.name == "Typer-Hero") {
+			var ancora = `https://${obj[index].owner.login}.github.io/${obj[index].name}/public/principal.html`;
+		} else {
+			var ancora = `https://${obj[index].owner.login}.github.io/${
           obj[index].name
         }`;
+		}
         $(anchor).attr("href", ancora);
 
         let img = document.createElement("img");
